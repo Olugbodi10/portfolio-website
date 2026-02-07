@@ -326,6 +326,9 @@ projects.push({
     }
   });
 
+
+
+  /*
   // ===== BACK TO TOP BUTTON =====
   const backToTopBtn = document.getElementById("back-to-top");
   const scrollPages = ["research.html", "cv.html", "analytics.html"];
@@ -339,4 +342,21 @@ projects.push({
       window.scrollTo({ top: 0, behavior: "smooth" });
     });
   }
-});
+
+});*/
+
+// ===== BACK TO TOP BUTTON =====
+const backToTopBtn = document.getElementById("back-to-top");
+
+if (backToTopBtn) {
+  window.addEventListener("scroll", () => {
+    backToTopBtn.style.display = window.scrollY > 300 ? "flex" : "none";
+  });
+
+  backToTopBtn.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
+}

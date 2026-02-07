@@ -183,6 +183,7 @@ const writings = [
 
 
 /* ===== RENDER FUNCTION ===== */
+/*
 const container = document.getElementById("writings-container");
 const filterButtons = document.querySelectorAll(".filters button");
 
@@ -236,6 +237,64 @@ function renderWritings(filter = "all") {
         container.appendChild(card);
     });
 }
+
+*/
+
+
+if (container) {
+
+  function renderWritings(filter = "all") {
+    container.innerHTML = "";
+
+    const filtered = filter === "all"
+      ? writings
+      : writings.filter(item => item.type === filter || item.category === filter);
+
+    filtered.forEach(item => {
+      const card = document.createElement("article");
+      card.className = `writing-card ${item.type === "award" ? "featured" : ""}`;
+
+      const buttonLabel = viewLabels[item.category] || "View Work";
+      const tagLabel =
+        item.type === "award"
+          ? "Award-Winning"
+          : (tagLabels[item.category] || "Work");
+
+      let cardContent = `
+        <div class="card-header">
+          <span class="tag">${tagLabel}</span>
+          <span class="year">${item.year}</span>
+        </div>
+      `;
+
+      if (item.category === "chapter" && item.bookTitle) {
+        cardContent += `
+          <h3 class="book-title">${item.bookTitle}</h3>
+          <h4 class="chapter-title">${item.title}</h4>
+          <p class="description">${item.description}</p>
+        `;
+      } else {
+        cardContent += `
+          <h3 class="content-title">${item.title}</h3>
+          <p class="description">${item.description}</p>
+        `;
+      }
+
+      if (item.recognition) {
+        cardContent += `<p class="recognition">${item.recognition}</p>`;
+      }
+
+      cardContent += `
+        <a href="${item.link}" class="btn small" target="_blank">
+          ${buttonLabel}
+        </a>
+      `;
+
+      card.innerHTML = cardContent;
+      container.appendChild(card);
+    });
+  }
+
 
 /*const toggle = document.querySelector(".menu-toggle");
 const navLinks = document.querySelector(".nav-links");

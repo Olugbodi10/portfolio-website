@@ -319,7 +319,7 @@ ul {
     }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 850px) {
     .skills-grid {
         display: block;
     }
@@ -339,7 +339,7 @@ ul {
     }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 850px) {
     .skills-grid > div {
         padding-bottom: 1rem;
         border-bottom: 1px solid #eee;

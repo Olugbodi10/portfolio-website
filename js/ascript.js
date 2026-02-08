@@ -270,57 +270,7 @@ projects.push({
 
   videos.forEach(video => observer.observe(video));
 
-  /*
-  // ===== NAVIGATION =====
-  const toggle = document.querySelector(".menu-toggle");
-  const navLinks = document.querySelector(".nav-links");
-  const navbar = document.querySelector(".navbar");
 
-  if (toggle && navLinks) {
-    toggle.addEventListener("click", () => {
-      navLinks.classList.toggle("open");
-    });
-  }
-
-  window.addEventListener("scroll", () => {
-    if (window.innerWidth <= 768 && navLinks.classList.contains("open")) {
-      navLinks.classList.remove("open");
-    }
-
-    if (navbar) {
-      if (window.scrollY > 10) navbar.classList.add("scrolled");
-      else navbar.classList.remove("scrolled");
-    }
-  });
-
-  document.addEventListener("click", (e) => {
-    if (window.innerWidth <= 768 && navLinks.classList.contains("open") && !e.target.closest(".navbar")) {
-      navLinks.classList.remove("open");
-    }
-  });
-
-  // Highlight active link
-  const currentPage = window.location.pathname.split("/").pop();
-  document.querySelectorAll(".nav-links a").forEach(link => {
-    const linkPage = link.getAttribute("href");
-    if (linkPage === currentPage || (currentPage === "" && linkPage === "index.html")) {
-      link.classList.add("active");
-    }
-  });
-
-  // ===== ANALYSIS DETAILS TOGGLE =====
-  document.addEventListener("click", (e) => {
-    if (e.target.classList.contains("toggle")) {
-      const targetId = e.target.getAttribute("data-target");
-      const content = document.getElementById(targetId);
-      if (content) {
-        content.classList.toggle("open");
-        e.target.textContent = content.classList.contains("open") ? "Hide Analysis Details" : "View Analysis Details";
-      }
-    }
-  });
-
-*/
 
   // ===== NAVIGATION =====
 const toggle = document.querySelector(".menu-toggle");
@@ -363,14 +313,16 @@ document.addEventListener("click", (e) => {
   }
 });
 
-    // Highlight active link
-  const currentPage = window.location.pathname.split("/").pop();
-  document.querySelectorAll(".nav-links a").forEach(link => {
-    const linkPage = link.getAttribute("href");
-    if (linkPage === currentPage || (currentPage === "" && linkPage === "index.html")) {
-      link.classList.add("active");
-    }
-  });
+  // Highlight active link
+const currentPage = window.location.pathname.split("/").pop() || "index.html";
+
+document.querySelectorAll(".nav-links a").forEach(link => {
+  const linkPage = link.getAttribute("href").split("/").pop();
+  if (linkPage === currentPage) {
+    link.classList.add("active");
+  }
+});
+  
   
   // ===== BACK TO TOP BUTTON =====
   const backToTopBtn = document.getElementById("back-to-top");
@@ -385,5 +337,6 @@ document.addEventListener("click", (e) => {
   }
 
 });
+
 
 

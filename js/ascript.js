@@ -31,9 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   ];
 
-
-
-/*
+  /*
   //EXTRA PROJECT 1
 projects.push({
   title: "Graduate Unemployment Analysis",
@@ -199,7 +197,6 @@ projects.push({
 //EXTRA PROJECT 
 */
 
-
   // ===== RENDER PROJECTS =====
   const container = document.getElementById("projectsContainer");
 
@@ -270,60 +267,74 @@ projects.push({
 
   videos.forEach(video => observer.observe(video));
 
+  // ===== TOGGLE PROJECT DETAILS =====
+  document.querySelectorAll(".toggle").forEach(button => {
+    button.addEventListener("click", () => {
+      const targetId = button.dataset.target;
+      const details = document.getElementById(targetId);
+      if (!details) return;
 
+      // Toggle the details section
+      details.classList.toggle("open");
 
-  // ===== NAVIGATION =====
-const toggle = document.querySelector(".menu-toggle");
-const navLinks = document.querySelector(".nav-links");
-const navbar = document.querySelector(".navbar");
-
-if (toggle && navLinks) {
-  toggle.addEventListener("click", () => {
-    navLinks.classList.toggle("open");
-  });
-
-  // ✅ INSERT HERE: close menu when a nav link is clicked
-  navLinks.querySelectorAll("a").forEach(link => {
-    link.addEventListener("click", () => {
-      if (window.innerWidth <= 768) {
-        navLinks.classList.remove("open");
-      }
+      // Update button text
+      button.textContent = details.classList.contains("open")
+        ? "Hide Analysis Details"
+        : "View Analysis Details";
     });
   });
-}
 
-window.addEventListener("scroll", () => {
-  if (window.innerWidth <= 768 && navLinks.classList.contains("open")) {
-    navLinks.classList.remove("open");
+  // ===== NAVIGATION =====
+  const toggle = document.querySelector(".menu-toggle");
+  const navLinks = document.querySelector(".nav-links");
+  const navbar = document.querySelector(".navbar");
+
+  if (toggle && navLinks) {
+    toggle.addEventListener("click", () => {
+      navLinks.classList.toggle("open");
+    });
+
+    // ✅ Close menu when a nav link is clicked (mobile)
+    navLinks.querySelectorAll("a").forEach(link => {
+      link.addEventListener("click", () => {
+        if (window.innerWidth <= 768) {
+          navLinks.classList.remove("open");
+        }
+      });
+    });
   }
 
-  if (navbar) {
-    if (window.scrollY > 10) navbar.classList.add("scrolled");
-    else navbar.classList.remove("scrolled");
-  }
-});
+  window.addEventListener("scroll", () => {
+    if (window.innerWidth <= 768 && navLinks?.classList.contains("open")) {
+      navLinks.classList.remove("open");
+    }
 
-document.addEventListener("click", (e) => {
-  if (
-    window.innerWidth <= 768 &&
-    navLinks.classList.contains("open") &&
-    !e.target.closest(".navbar")
-  ) {
-    navLinks.classList.remove("open");
-  }
-});
+    if (navbar) {
+      navbar.classList.toggle("scrolled", window.scrollY > 10);
+    }
+  });
+
+  // Close menu if clicking outside
+  document.addEventListener("click", (e) => {
+    if (
+      window.innerWidth <= 768 &&
+      navLinks?.classList.contains("open") &&
+      !e.target.closest(".nav-links") &&
+      !e.target.closest(".menu-toggle")
+    ) {
+      navLinks.classList.remove("open");
+    }
+  });
 
   // Highlight active link
-const currentPage = window.location.pathname.split("/").pop() || "index.html";
+  const currentPage = window.location.pathname.split("/").pop() || "index.html";
+  document.querySelectorAll(".nav-links a").forEach(link => {
+    const linkPage = link.getAttribute("href").split("/").pop();
+    if (linkPage === currentPage) {
+      link.classList.add("active");
+    }
+  });
 
-document.querySelectorAll(".nav-links a").forEach(link => {
-  const linkPage = link.getAttribute("href").split("/").pop();
-  if (linkPage === currentPage) {
-    link.classList.add("active");
-  }
-});
-  
-  
   // ===== BACK TO TOP BUTTON =====
   const backToTopBtn = document.getElementById("back-to-top");
   if (backToTopBtn) {
@@ -335,8 +346,4 @@ document.querySelectorAll(".nav-links a").forEach(link => {
       window.scrollTo({ top: 0, behavior: "smooth" });
     });
   }
-
 });
-
-
-

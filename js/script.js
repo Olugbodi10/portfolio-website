@@ -264,10 +264,11 @@ if (filterButtons.length && container) {
 }
 
 
+
 /* =========================
    NAVIGATION & UI
 ========================= */
-
+/*
 document.addEventListener("DOMContentLoaded", () => {
   const toggle = document.querySelector(".menu-toggle");
   const navLinks = document.querySelector(".nav-links");
@@ -336,5 +337,75 @@ document.addEventListener("DOMContentLoaded", () => {
       navLinks.classList.remove("open");
     }
   });
+});*/
+
+  // ===== NAVIGATION =====
+const toggle = document.querySelector(".menu-toggle");
+const navLinks = document.querySelector(".nav-links");
+const navbar = document.querySelector(".navbar");
+
+if (toggle && navLinks) {
+  toggle.addEventListener("click", () => {
+    navLinks.classList.toggle("open");
+  });
+
+  // ✅ INSERT HERE: close menu when a nav link is clicked
+  navLinks.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", () => {
+      if (window.innerWidth <= 768) {
+        navLinks.classList.remove("open");
+      }
+    });
+  });
+}
+
+window.addEventListener("scroll", () => {
+  if (window.innerWidth <= 768 && navLinks.classList.contains("open")) {
+    navLinks.classList.remove("open");
+  }
+
+  if (navbar) {
+    if (window.scrollY > 10) navbar.classList.add("scrolled");
+    else navbar.classList.remove("scrolled");
+  }
 });
+
+document.addEventListener("click", (e) => {
+  if (
+    window.innerWidth <= 768 &&
+    navLinks.classList.contains("open") &&
+    !e.target.closest(".navbar")
+  ) {
+    navLinks.classList.remove("open");
+  }
+});
+
+  // Highlight active link
+const currentPage = window.location.pathname.split("/").pop() || "index.html";
+
+document.querySelectorAll(".nav-links a").forEach(link => {
+  const linkPage = link.getAttribute("href").split("/").pop();
+  if (linkPage === currentPage) {
+    link.classList.add("active");
+  }
+});
+  
+  
+  // ===== BACK TO TOP BUTTON =====
+  const backToTopBtn = document.getElementById("back-to-top");
+  if (backToTopBtn) {
+    window.addEventListener("scroll", () => {
+      backToTopBtn.style.display = window.scrollY > 300 ? "flex" : "none";
+    });
+
+    backToTopBtn.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  }
+
+});
+
+
+
+
 

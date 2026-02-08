@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
       deliverables: {
         documentation: "assets/Project Documentation.pdf",
         scope: "assets/DATA ANALYTICS PROJECT SOW.pdf",
-        presentation: "video/Presentation.mp4",
+        presentation: "video/Presentation.mp4"
       }
     },
   ];
@@ -342,3 +342,4 @@ projects.push({
   }
 
 }); // end DOMContentLoaded
+

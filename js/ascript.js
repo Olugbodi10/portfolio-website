@@ -362,6 +362,15 @@ document.addEventListener("click", (e) => {
     navLinks.classList.remove("open");
   }
 });
+
+    // Highlight active link
+  const currentPage = window.location.pathname.split("/").pop();
+  document.querySelectorAll(".nav-links a").forEach(link => {
+    const linkPage = link.getAttribute("href");
+    if (linkPage === currentPage || (currentPage === "" && linkPage === "index.html")) {
+      link.classList.add("active");
+    }
+  });
   
   // ===== BACK TO TOP BUTTON =====
   const backToTopBtn = document.getElementById("back-to-top");
@@ -376,4 +385,5 @@ document.addEventListener("click", (e) => {
   }
 
 });
+
 

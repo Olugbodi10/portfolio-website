@@ -1,45 +1,48 @@
 //Data Analytics Section
 
 document.addEventListener("DOMContentLoaded", () => {
+
   // ===== DATA ANALYTICS PROJECTS =====
   const projects = [
-  {
-  title: "Cyclistic Bike-Share Analysis",
-  overview: "An analysis of Cyclistic bike-share data to guide marketing strategies aimed at converting casual riders into annual members.",
-  businessProblem: "Cyclistic’s growth and profitability depend on increasing the number of annual memberships. While casual riders form a significant portion of the user base, their behaviors and usage patterns differ from those of annual members. The marketing team currently lacks data-driven insights into these differences, limiting their ability to design targeted strategies that convert casual riders into annual members. A structured analysis of historical bike-share data is therefore required to identify actionable trends and inform strategic marketing decisions.",
-  data: {
-    source: "Cyclistic historical bike trip data",
-    link: "https://divvy-tripdata.s3.amazonaws.com/index.html",
-    limitations: "The analysis relies on historical trip data provided as part of the Google Data Analytics Certification capstone. The dataset excludes demographic and income variables, limiting deeper behavioral segmentation. Rider motivations are inferred from usage patterns rather than direct survey data, and findings reflect past trends that may not fully capture recent market dynamics.",
-  },
-  methodology: [
-  "Translated a business growth objective into measurable analytical questions",
-  "Collected historical Cyclistic trip data provided in quarterly datasets",
-  "Assessed data reliability and suitability using the ROCCC framework",
-  "Cleaned and standardised inconsistent schemas, column names, and rider classifications",
-  "Removed irrelevant and non-uniform variables to ensure structural consistency",
-  "Engineered analytical features including ride duration, day-of-week, and monthly indicators",
-  "Merged all quarterly datasets into a single master dataset",
-  "Validated data accuracy through consistency and range checks",
-  "Analyzed behavioural differences between casual riders and annual members",
-  "Segmented riders by trip duration, usage frequency, and temporal patterns",
-  "Visualised key trends to support marketing insights and recommendations"
-],
- insights: [
-  "Annual members demonstrate significantly higher ride frequency, with peak usage occurring on weekdays, particularly Tuesdays, indicating routine and utilitarian usage patterns.",
-  "Casual riders exhibit longer average ride durations and peak usage on Sundays, suggesting leisure-oriented and discretionary riding behaviour.",
-  "Distinct temporal usage patterns between rider types indicate that membership status strongly influences how and when Cyclistic bikes are used.",
-  "Weekend concentration and longer ride durations among casual riders represent a clear opportunity for targeted membership conversion strategies."
-],
-recommendation: 
-  "Cyclistic should design weekend-focused digital marketing campaigns aimed at casual riders, highlighting the cost efficiency and convenience of annual memberships. Promotions such as limited-time weekend membership discounts, ride credits for frequent weekend users, and in-app messaging triggered on Sundays can directly target peak casual usage periods. Thus, by aligning membership offers with how casual riders actually use the service, Cyclistic can encourage more organic and sustained conversions.",
-  deliverables: {
-    documentation: "assets/Project Documentation.pdf",
-    scope: "assets/DATA ANALYTICS PROJECT SOW.pdf",
-    presentation: "video/Presentation.mp4",
-  }
+    {
+      title: "Cyclistic Bike-Share Analysis",
+      overview: "An analysis of Cyclistic bike-share data to guide marketing strategies aimed at converting casual riders into annual members.",
+      businessProblem: "Cyclistic’s growth and profitability depend on increasing the number of annual memberships. While casual riders form a significant portion of the user base, their behaviors and usage patterns differ from those of annual members. The marketing team currently lacks data-driven insights into these differences, limiting their ability to design targeted strategies that convert casual riders into annual members. A structured analysis of historical bike-share data is therefore required to identify actionable trends and inform strategic marketing decisions.",
+      data: {
+        source: "Cyclistic historical bike trip data",
+        link: "https://divvy-tripdata.s3.amazonaws.com/index.html",
+        limitations: "The analysis relies on historical trip data provided as part of the Google Data Analytics Certification capstone. The dataset excludes demographic and income variables, limiting deeper behavioral segmentation. Rider motivations are inferred from usage patterns rather than direct survey data, and findings reflect past trends that may not fully capture recent market dynamics.",
+      },
+      methodology: [
+        "Translated a business growth objective into measurable analytical questions",
+        "Collected historical Cyclistic trip data provided in quarterly datasets",
+        "Assessed data reliability and suitability using the ROCCC framework",
+        "Cleaned and standardised inconsistent schemas, column names, and rider classifications",
+        "Removed irrelevant and non-uniform variables to ensure structural consistency",
+        "Engineered analytical features including ride duration, day-of-week, and monthly indicators",
+        "Merged all quarterly datasets into a single master dataset",
+        "Validated data accuracy through consistency and range checks",
+        "Analyzed behavioural differences between casual riders and annual members",
+        "Segmented riders by trip duration, usage frequency, and temporal patterns",
+        "Visualised key trends to support marketing insights and recommendations"
+      ],
+      insights: [
+        "Annual members demonstrate significantly higher ride frequency, with peak usage occurring on weekdays, particularly Tuesdays, indicating routine and utilitarian usage patterns.",
+        "Casual riders exhibit longer average ride durations and peak usage on Sundays, suggesting leisure-oriented and discretionary riding behaviour.",
+        "Distinct temporal usage patterns between rider types indicate that membership status strongly influences how and when Cyclistic bikes are used.",
+        "Weekend concentration and longer ride durations among casual riders represent a clear opportunity for targeted membership conversion strategies."
+      ],
+      recommendation: 
+        "Cyclistic should design weekend-focused digital marketing campaigns aimed at casual riders, highlighting the cost efficiency and convenience of annual memberships. Promotions such as limited-time weekend membership discounts, ride credits for frequent weekend users, and in-app messaging triggered on Sundays can directly target peak casual usage periods. Thus, by aligning membership offers with how casual riders actually use the service, Cyclistic can encourage more organic and sustained conversions.",
+      deliverables: {
+        documentation: "assets/Project Documentation.pdf",
+        scope: "assets/DATA ANALYTICS PROJECT SOW.pdf",
+        presentation: "video/Presentation.mp4",
+      }
     },
   ];
+
+
 
 /*
   //EXTRA PROJECT 1
@@ -231,9 +234,9 @@ projects.push({
           <h3>Business Problem</h3>
           <p>${project.businessProblem}</p>
 
-         <h3>Data and Scope</h3>
+          <h3>Data and Scope</h3>
           <p><strong>Source:</strong> 
-           ${project.data.link ? `<a href="${project.data.link}" target="_blank">${project.data.source}</a>` : project.data.source}
+            ${project.data.link ? `<a href="${project.data.link}" target="_blank">${project.data.source}</a>` : project.data.source}
           </p>
           <p><strong>Limitations:</strong> ${project.data.limitations}</p>
 
@@ -272,7 +275,6 @@ projects.push({
       }
     });
   });
-
   videos.forEach(video => observer.observe(video));
 
   // ===== NAVIGATION =====
@@ -287,12 +289,9 @@ projects.push({
   }
 
   window.addEventListener("scroll", () => {
-    // Close menu on scroll for mobile
     if (window.innerWidth <= 768 && navLinks.classList.contains("open")) {
       navLinks.classList.remove("open");
     }
-
-    // Navbar shadow effect
     if (navbar) {
       if (window.scrollY > 10) navbar.classList.add("scrolled");
       else navbar.classList.remove("scrolled");
@@ -326,37 +325,20 @@ projects.push({
     }
   });
 
-
-
-  /*
   // ===== BACK TO TOP BUTTON =====
   const backToTopBtn = document.getElementById("back-to-top");
-  const scrollPages = ["research.html", "cv.html", "analytics.html"];
 
-  if (backToTopBtn && scrollPages.includes(currentPage)) {
+  if (backToTopBtn) {
     window.addEventListener("scroll", () => {
       backToTopBtn.style.display = window.scrollY > 300 ? "flex" : "none";
     });
 
     backToTopBtn.addEventListener("click", () => {
-      window.scrollTo({ top: 0, behavior: "smooth" });
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
     });
   }
 
-});*/
-
-// ===== BACK TO TOP BUTTON =====
-const backToTopBtn = document.getElementById("back-to-top");
-
-if (backToTopBtn) {
-  window.addEventListener("scroll", () => {
-    backToTopBtn.style.display = window.scrollY > 300 ? "flex" : "none";
-  });
-
-  backToTopBtn.addEventListener("click", () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth"
-    });
-  });
-}
+}); // end DOMContentLoaded

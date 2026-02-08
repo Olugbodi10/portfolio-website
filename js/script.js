@@ -31,6 +31,7 @@ const tagLabels = {
   article: "Article"
 };
 
+
 const writings = [
   {
     title: "Omo Dàadáa: The Day 0.03 CGPA Changed My Perspective",
@@ -59,7 +60,6 @@ const writings = [
     recognition: "Top Ten – NCDMB National Undergraduate Essay Competition",
     link: "assets/Emmanuel Olugbodi (NCDMB, 2023).pdf"
   },
-  /* ===== TEMPLATE FOR OTHER ESSAYS ===== */
   {
     bookTitle: "POLITICS IN NIGERIA",
     title: "Chapter 1: Political parties",
@@ -116,7 +116,7 @@ const writings = [
     year: 2024,
     description: "This essay examines Sustainable Development Goal 4, which focuses on achieving inclusive and equitable quality education for all. And this essay emphasizes on the role of students in promoting inclusive and quality education through active engagement and advocacy.",
     recognition: "",
-    link: "assets/Emmanuel Olugbodi ( 2024).pdf"
+    link: "assets/Emmanuel Olugbodi (2024).pdf"
   },
   {
     title: "The Japa’ Syndrome and its Effect on National Economy: The Way Forward",
@@ -236,7 +236,7 @@ function renderWritings(filter = "all") {
   });
 }
 
-// Filter buttons (safe)
+// Filter buttons
 if (filterButtons.length && container) {
   filterButtons.forEach(btn => {
     btn.addEventListener("click", () => {
@@ -266,19 +266,35 @@ document.addEventListener("DOMContentLoaded", () => {
       navLinks.classList.toggle("open");
     });
 
-    // Close mobile menu when a link is clicked
+    // Close menu when a nav link is clicked
     navLinks.querySelectorAll("a").forEach(link => {
       link.addEventListener("click", () => {
-        if (window.innerWidth <= 768) navLinks.classList.remove("open");
+        if (window.innerWidth <= 768) {
+          navLinks.classList.remove("open");
+        }
       });
     });
   }
+
+  // Close menu when clicking outside
+  document.addEventListener("click", (e) => {
+    if (
+      window.innerWidth <= 768 &&
+      navLinks?.classList.contains("open") &&
+      !e.target.closest(".nav-links") &&
+      !e.target.closest(".menu-toggle")
+    ) {
+      navLinks.classList.remove("open");
+    }
+  });
 
   // Highlight active page link
   const currentPage = window.location.pathname.split("/").pop() || "index.html";
   document.querySelectorAll(".nav-links a").forEach(link => {
     const linkPage = link.getAttribute("href").split("/").pop();
-    if (linkPage === currentPage) link.classList.add("active");
+    if (linkPage === currentPage) {
+      link.classList.add("active");
+    }
   });
 
   // Scroll effects
@@ -291,27 +307,16 @@ document.addEventListener("DOMContentLoaded", () => {
       backToTopBtn.style.display = window.scrollY > 300 ? "flex" : "none";
     }
 
+    // Auto-close menu on scroll (mobile)
     if (window.innerWidth <= 768 && navLinks?.classList.contains("open")) {
       navLinks.classList.remove("open");
     }
   });
 
-  // Back-to-top button
+  // Back to top button
   if (backToTopBtn) {
     backToTopBtn.addEventListener("click", () => {
       window.scrollTo({ top: 0, behavior: "smooth" });
     });
   }
-
-  // Close mobile menu when clicking outside
-  document.addEventListener("click", e => {
-    if (
-      window.innerWidth <= 768 &&
-      navLinks?.classList.contains("open") &&
-      !e.target.closest(".nav-links") &&
-      !e.target.closest(".menu-toggle")
-    ) {
-      navLinks.classList.remove("open");
-    }
-  });
 });

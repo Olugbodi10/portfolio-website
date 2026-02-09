@@ -266,6 +266,28 @@ ul {
     gap: 1.5rem;
 }
 
+
+
+.cv-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1rem;
+}
+
+.cv-row h3,
+.cv-row .cv-meta {
+    margin: 0;
+}
+
+.cv-year {
+    white-space: nowrap;
+    font-weight: 500;
+    color: #555;
+}
+
+
+
 .btn.download {
     display: inline-flex;
     align-items: center;

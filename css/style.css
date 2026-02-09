@@ -372,6 +372,19 @@ ul {
     }
 }
 
+@media (max-width: 768px) {
+
+    .cv-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.25rem;
+    }
+
+    .cv-year {
+        font-size: 0.9rem;
+        color: #666;
+    }
+}
 
 /* Research Section */
 /* PAGE HEADER */

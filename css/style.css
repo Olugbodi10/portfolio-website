@@ -266,8 +266,6 @@ ul {
     gap: 1.5rem;
 }
 
-
-
 .cv-row {
     display: flex;
     justify-content: space-between;
@@ -287,6 +285,25 @@ ul {
 }
 
 
+
+.cv-downloads {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+}
+
+.download-card {
+    flex: 1;
+    min-width: 220px;
+}
+
+.download-card p {
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+/* Buttons */
 
 .btn.download {
     display: inline-flex;
@@ -312,6 +329,7 @@ ul {
 
 /* Hover effect */
 .btn.download:hover {
+    background: #162a45;
     transform: translateY(-2px);
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
 }
@@ -339,6 +357,18 @@ ul {
     .cv-header h1 {
         font-size: 1.8rem;
     }
+}
+
+@media (max-width: 768px) {
+
+    .cv-downloads {
+        flex-direction: column;
+    }
+
+    .download-card {
+        width: 100%;
+    }
+
 }
 
 @media (max-width: 850px) {

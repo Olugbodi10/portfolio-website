@@ -1,79 +1,931 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Emmanuel | Portfolio</title>
 
-    <link rel="icon" href="images/favicon.ico">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
-    <link rel="apple-touch-icon" href="assets/favicon/apple-touch-icon.png">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Emmanuel Olugbodi is a Finance graduate focused on data analytics, research, public finance, and evidence-based decision-making."
+    >
+
+    <meta
+        name="theme-color"
+        content="#0b1f33"
+    >
+
+    <title>
+        Emmanuel Olugbodi | Finance, Data & Research
+    </title>
+
+
+    <!-- =========================
+         FAVICONS
+    ========================== -->
+
+    <link
+        rel="icon"
+        href="images/favicon.ico"
+    >
+
+    <link
+        rel="icon"
+        type="image/png"
+        sizes="32x32"
+        href="images/favicon-32x32.png"
+    >
+
+    <link
+        rel="icon"
+        type="image/png"
+        sizes="16x16"
+        href="images/favicon-16x16.png"
+    >
+
+    <link
+        rel="apple-touch-icon"
+        href="assets/favicon/apple-touch-icon.png"
+    >
+
+
+    <!-- =========================
+         HOMEPAGE STYLESHEET
+    ========================== -->
+
 
     <link rel="stylesheet" href="css/style.css">
-    <script defer src="js/script.js"></script>
+   <!-- <script defer src="js/script.js"></script>-->
+
 </head>
+
+
 <body>
-<nav class="navbar">
-  <div class="nav-container">
-    <div class="brand">
-      <img src="images/MyLogom.jpg" alt="Emmanuel Olugbodi logo" />
-    </div>
 
-    <button class="menu-toggle" aria-label="Open navigation">
-      ☰
-    </button>
 
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="cv.html">CV</a></li>
-      <li><a href="research.html">Research</a></li>
-      <li><a href="analytics.html">Data Analytics</a></li>
-    </ul>
-  </div>
-</nav>
+    <!-- =====================================================
+         HEADER / NAVIGATION
+    ====================================================== -->
 
-<main class="page-content">
-    <section class="hero fade-in">
-        <img src="images/profile-placeholder.jpg" alt="Profile Image">
-        <h1>Finance, Data Analytics & Research Professional</h1>
-       <!-- <p>I combine financial insight, political analysis, and data-driven research to support informed decision-making.</p>-->
-        <p>I am Emmanuel Olugbodi, a Finance student at the University of Lagos with interests spanning data analytics, research writing, and public finance. I am driven by a commitment to understanding how financial systems, data, and policy decisions shape development, and how analytical thinking can be applied to real-world challenges.</p>
-        <a class="btn" href="cv.html">View My CV</a>
-    </section>
+    <header class="site-header">
+
+        <nav
+            class="navbar"
+            aria-label="Primary navigation"
+        >
+
+            <div class="nav-container">
+
+
+                <!-- Website brand -->
+
+                <a
+                    class="brand"
+                    href="index.html"
+                    aria-label="Emmanuel Olugbodi home"
+                >
+
+                    <img
+                        src="images/MyLogom.jpg"
+                        alt="Emmanuel Olugbodi logo"
+                    >
+
+                </a>
+
+
+                <!-- Mobile hamburger button -->
+
+                <button
+                    class="menu-toggle"
+                    type="button"
+                    aria-expanded="false"
+                    aria-controls="primary-menu"
+                    aria-label="Open navigation menu"
+                >
+
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                </button>
+
+
+                <!-- Navigation links -->
+
+                <ul
+                    class="nav-links"
+                    id="primary-menu"
+                >
+
+                    <li>
+
+                        <a
+                            class="active"
+                            href="index.html"
+                            aria-current="page"
+                        >
+                            Home
+                        </a>
+
+                    </li>
+
+
+                    <li>
+
+                        <a href="about.html">
+                            About
+                        </a>
+
+                    </li>
+
+
+                    <li>
+
+                        <a href="cv.html">
+                            CV
+                        </a>
+
+                    </li>
+
+
+                    <li>
+
+                        <a href="research.html">
+                            Research
+                        </a>
+
+                    </li>
+
+
+                    <li>
+
+                        <a href="analytics.html">
+                            Data Analytics
+                        </a>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- =====================================================
+         MAIN CONTENT
+    ====================================================== -->
+
+    <main>
+
+
+        <!-- =================================================
+             HERO SECTION
+        ================================================== -->
+
+        <section
+            class="hero section-shell"
+            aria-labelledby="hero-title"
+        >
+
+
+            <!-- Hero text -->
+
+            <div class="hero-copy">
+
+                <p class="eyebrow">
+                    Finance · Data Analytics · Research
+                </p>
+
+
+                <h1 id="hero-title">
+                    Turning financial and policy questions into clear, useful insight.
+                </h1>
+
+
+                <p class="hero-text">
+                    I am Emmanuel Olugbodi, a Finance graduate from the University of Lagos with interests spanning data analytics, research, public finance, and evidence-based decision-making. I explore how financial understanding, data, and policy analysis can be applied to real-world challenges and development.
+                </p>
+
+
+                <div class="hero-actions">
+
+                    <a
+                        class="button button-primary"
+                        href="analytics.html"
+                    >
+                        Explore my work
+
+                        <span aria-hidden="true">
+                            →
+                        </span>
+
+                    </a>
+
+
+                    <a
+                        class="button button-secondary"
+                        href="cv.html"
+                    >
+                        View my CV
+                    </a>
+
+                </div>
+
+
+                <p class="availability">
+
+                    <span
+                        class="status-dot"
+                        aria-hidden="true"
+                    ></span>
+
+                    Open to research, analytics, finance and related opportunities
+
+                </p>
+
+            </div>
+
+
+
+            <!-- Hero visual -->
+
+            <div class="hero-visual">
+
+
+                <!-- Professional passport photograph -->
+
+                <div class="portrait-frame">
+
+                    <img
+                        src="images/profile-placeholder.jpg"
+                        alt="Professional portrait of Emmanuel Olugbodi"
+                    >
+
+                </div>
+
+
+                <!-- Supporting visual note -->
+
+                <div class="visual-note note-one">
+
+                    <strong>
+                        01
+                    </strong>
+
+                    <span>
+                        Research-led thinking
+                    </span>
+
+                </div>
+
+
+                <!-- Supporting visual note -->
+
+                <div class="visual-note note-two">
+
+                    <strong>
+                        02
+                    </strong>
+
+                    <span>
+                        Evidence-based analysis
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             PROFESSIONAL FOCUS STRIP
+        ================================================== -->
+
+        <section
+            class="intro-strip"
+            aria-label="Professional focus"
+        >
+
+            <div class="section-shell focus-grid">
+
+                <p class="section-kicker">
+                    My focus
+                </p>
+
+
+                <p class="focus-statement">
+                    I connect financial understanding with analytical tools to make complex information easier to interpret, communicate, and act on.
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             AREAS OF FOCUS
+        ================================================== -->
+
+        <section
+            class="work-section section-shell"
+            aria-labelledby="work-title"
+        >
+
+            <div class="section-heading">
+
+                <div>
+
+                    <p class="section-kicker">
+                        What I do
+                    </p>
+
+                    <h2 id="work-title">
+                        Areas of focus
+                    </h2>
+
+                </div>
+
+
+                <a
+                    class="text-link"
+                    href="about.html"
+                >
+                    More about me
+
+                    <span aria-hidden="true">
+                        ↗
+                    </span>
+
+                </a>
+
+            </div>
+
+
+
+            <div class="focus-cards">
+
+
+                <!-- Financial analysis -->
+
+                <article class="focus-card">
+
+                    <span class="card-number">
+                        01
+                    </span>
+
+                    <h3>
+                        Financial analysis
+                    </h3>
+
+                    <p>
+                        I examine financial systems, performance, and public finance questions with a practical and decision-oriented mindset.
+                    </p>
+
+                    <a
+                        href="cv.html"
+                        aria-label="Learn more about Emmanuel's financial analysis experience"
+                    >
+                        Learn more
+
+                        <span aria-hidden="true">
+                            →
+                        </span>
+
+                    </a>
+
+                </article>
+
+
+
+                <!-- Data analytics -->
+
+                <article class="focus-card featured-card">
+
+                    <span class="card-number">
+                        02
+                    </span>
+
+                    <h3>
+                        Data analytics
+                    </h3>
+
+                    <p>
+                        I use structured data, analytical tools, and visualisation to identify patterns, explain findings, and communicate insights clearly.
+                    </p>
+
+                    <a
+                        href="analytics.html"
+                        aria-label="View Emmanuel's data analytics work"
+                    >
+                        View analytics
+
+                        <span aria-hidden="true">
+                            →
+                        </span>
+
+                    </a>
+
+                </article>
+
+
+
+                <!-- Research -->
+
+                <article class="focus-card">
+
+                    <span class="card-number">
+                        03
+                    </span>
+
+                    <h3>
+                        Research & policy
+                    </h3>
+
+                    <p>
+                        I investigate issues at the intersection of finance, economics, policy, and development, turning research into accessible narratives.
+                    </p>
+
+                    <a
+                        href="research.html"
+                        aria-label="Read Emmanuel's research work"
+                    >
+                        Read research
+
+                        <span aria-hidden="true">
+                            →
+                        </span>
+
+                    </a>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             CLOSING CALL TO ACTION
+        ================================================== -->
+
+        <section
+            class="closing-cta section-shell"
+            aria-labelledby="cta-title"
+        >
+
+            <div>
+
+                <p class="section-kicker">
+                    Let’s connect
+                </p>
+
+
+                <h2 id="cta-title">
+                    Interested in working together or discussing an idea?
+                </h2>
+
+            </div>
+
+
+            <a
+                class="button button-dark"
+                href="mailto:olugbodiemmanuel1@gmail.com"
+            >
+                Send me an email
+
+                <span aria-hidden="true">
+                    ↗
+                </span>
+
+            </a>
+
+        </section>
+
     </main>
 
-   <footer class="site-footer">
-  <div class="footer-inner">
-    <p class="footer-name" class="footer-signature">Emmanuel Olugbodi</p>
 
-   <div class="social-links">
 
-  <a href="mailto:olugbodiemmanuel1@gmail.com" aria-label="Email" class="icon-email">
-  <svg viewBox="0 0 24 24" class="icon">
-    <path d="M12 2a10 10 0 1010 10v-1a1 1 0 00-2 0v1a8 8 0 11-8-8 7.8 7.8 0 016.2 3.1 1 1 0 001.6-1.2A9.8 9.8 0 0012 2z"/>
-    <path d="M12 7a5 5 0 100 10 4.8 4.8 0 003.6-1.6l.2.6a1 1 0 002 0V12a5 5 0 00-5-5zm0 8a3 3 0 110-6 3 3 0 010 6z"/>
-  </svg>
-</a>
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
 
-  <a href="https://www.linkedin.com/in/emmanuelsafr" target="_blank" aria-label="LinkedIn" class="icon-linkedin">
-    <svg viewBox="0 0 24 24" class="icon">
-      <path d="M4 3a2 2 0 100 4 2 2 0 000-4z"/>
-      <path d="M3 8h2v13H3z"/>
-      <path d="M8 8h2v2c.6-1 1.6-2 3.4-2 3 0 4.6 2 4.6 5.2V21h-2v-7c0-1.8-.7-3-2.4-3-1.3 0-2.2.9-2.5 1.8-.1.3-.1.7-.1 1.1V21H8z"/>
-    </svg>
-  </a>
+    <footer class="site-footer">
 
-  <a href="https://x.com/_emmanuelSAFR" target="_blank" aria-label="X" class="icon-x">
-    <svg viewBox="0 0 24 24" class="icon">
-      <path d="M3 3l7.5 8.5L3 21h3.5l5.5-6.3L17 21h4l-7.8-9 7.3-9H17l-4.8 5.7L7.8 3z"/>
-    </svg>
-  </a>
-</div>
-  <div>
-    <p class="footer-copy" style="text-align: center;"> © 2026 All rights reserved</p>
-  </div>
-  </div>
-</footer>
+        <div class="footer-inner section-shell">
+
+
+            <!-- Footer identity -->
+
+            <div class="footer-brand">
+
+                <a
+                    class="footer-name"
+                    href="index.html"
+                >
+                    Emmanuel Olugbodi
+                </a>
+
+
+                <p class="footer-copy">
+                    Finance · Data Analytics · Research
+                </p>
+
+            </div>
+
+
+
+            <!-- Social links -->
+
+            <div
+                class="social-links"
+                aria-label="Social and contact links"
+            >
+
+                <a
+                    href="mailto:olugbodiemmanuel1@gmail.com"
+                    aria-label="Email Emmanuel"
+                >
+
+                    <span
+                        class="social-icon"
+                        aria-hidden="true"
+                    >
+                        ✉
+                    </span>
+
+                    <span>
+                        Email
+                    </span>
+
+                </a>
+
+
+                <a
+                    href="https://www.linkedin.com/in/emmanuelsafr"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Emmanuel on LinkedIn"
+                >
+
+                    <span
+                        class="social-icon linkedin-icon"
+                        aria-hidden="true"
+                    >
+                        in
+                    </span>
+
+                    <span>
+                        LinkedIn
+                    </span>
+
+                </a>
+
+
+                <a
+                    href="https://x.com/_emmanuelSAFR"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Emmanuel on X"
+                >
+
+                    <span
+                        class="social-icon x-icon"
+                        aria-hidden="true"
+                    >
+                        𝕏
+                    </span>
+
+                    <span>
+                        X
+                    </span>
+
+                </a>
+
+            </div>
+
+
+
+            <!-- Copyright -->
+
+            <p class="copyright">
+
+                ©
+                <span id="year"></span>
+                Emmanuel Olugbodi.
+                All rights reserved.
+
+            </p>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- =====================================================
+         BACK TO TOP BUTTON
+    ====================================================== -->
+
+    <button
+        class="back-to-top"
+        type="button"
+        aria-label="Back to top"
+        title="Back to top"
+    >
+
+        <span aria-hidden="true">
+            ↑
+        </span>
+
+    </button>
+
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script>
+
+
+        /* =================================================
+           MOBILE NAVIGATION
+        ================================================== */
+
+        const menuButton =
+            document.querySelector('.menu-toggle');
+
+        const menu =
+            document.querySelector('#primary-menu');
+
+
+        /*
+         * Open and close the mobile navigation.
+         */
+
+        if (menuButton && menu) {
+
+            menuButton.addEventListener('click', (event) => {
+
+                event.stopPropagation();
+
+
+                const isOpen =
+                    menuButton.getAttribute('aria-expanded') === 'true';
+
+
+                menuButton.setAttribute(
+                    'aria-expanded',
+                    String(!isOpen)
+                );
+
+
+                menuButton.setAttribute(
+                    'aria-label',
+                    isOpen
+                        ? 'Open navigation menu'
+                        : 'Close navigation menu'
+                );
+
+
+                menu.classList.toggle(
+                    'open',
+                    !isOpen
+                );
+
+            });
+
+
+
+            /*
+             * Close the navigation after
+             * selecting a page.
+             */
+
+            menu.querySelectorAll('a').forEach((link) => {
+
+                link.addEventListener('click', () => {
+
+                    menuButton.setAttribute(
+                        'aria-expanded',
+                        'false'
+                    );
+
+
+                    menuButton.setAttribute(
+                        'aria-label',
+                        'Open navigation menu'
+                    );
+
+
+                    menu.classList.remove('open');
+
+                });
+
+            });
+
+
+
+            /*
+             * Close the navigation when the user
+             * clicks or touches outside the menu.
+             */
+
+            document.addEventListener(
+                'click',
+                (event) => {
+
+                    const clickedInsideMenu =
+                        menu.contains(event.target);
+
+
+                    const clickedMenuButton =
+                        menuButton.contains(event.target);
+
+
+                    if (
+                        !clickedInsideMenu &&
+                        !clickedMenuButton &&
+                        menu.classList.contains('open')
+                    ) {
+
+                        menuButton.setAttribute(
+                            'aria-expanded',
+                            'false'
+                        );
+
+
+                        menuButton.setAttribute(
+                            'aria-label',
+                            'Open navigation menu'
+                        );
+
+
+                        menu.classList.remove('open');
+
+                    }
+
+                }
+            );
+
+
+
+            /*
+             * Close the navigation when
+             * the Escape key is pressed.
+             */
+
+            document.addEventListener(
+                'keydown',
+                (event) => {
+
+                    if (
+                        event.key === 'Escape' &&
+                        menu.classList.contains('open')
+                    ) {
+
+                        menuButton.setAttribute(
+                            'aria-expanded',
+                            'false'
+                        );
+
+
+                        menuButton.setAttribute(
+                            'aria-label',
+                            'Open navigation menu'
+                        );
+
+
+                        menu.classList.remove('open');
+
+
+                        menuButton.focus();
+
+                    }
+
+                }
+            );
+
+
+
+            /*
+             * Close the mobile navigation when
+             * the user starts scrolling.
+             */
+
+            window.addEventListener(
+                'scroll',
+                () => {
+
+                    if (
+                        menu.classList.contains('open') &&
+                        window.scrollY > 10
+                    ) {
+
+                        menuButton.setAttribute(
+                            'aria-expanded',
+                            'false'
+                        );
+
+
+                        menuButton.setAttribute(
+                            'aria-label',
+                            'Open navigation menu'
+                        );
+
+
+                        menu.classList.remove('open');
+
+                    }
+
+                }
+            );
+
+        }
+
+
+
+        /* =================================================
+           CURRENT YEAR
+        ================================================== */
+
+        const yearElement =
+            document.querySelector('#year');
+
+
+        if (yearElement) {
+
+            yearElement.textContent =
+                new Date().getFullYear();
+
+        }
+
+
+
+        /* =================================================
+           BACK TO TOP
+        ================================================== */
+
+        const backToTopButton =
+            document.querySelector('.back-to-top');
+
+
+        if (backToTopButton) {
+
+            window.addEventListener(
+                'scroll',
+                () => {
+
+                    if (window.scrollY > 500) {
+
+                        backToTopButton.classList.add(
+                            'visible'
+                        );
+
+                    } else {
+
+                        backToTopButton.classList.remove(
+                            'visible'
+                        );
+
+                    }
+
+                }
+            );
+
+
+            backToTopButton.addEventListener(
+                'click',
+                () => {
+
+                    window.scrollTo({
+
+                        top: 0,
+
+                        behavior: 'smooth'
+
+                    });
+
+                }
+            );
+
+        }
+
+    </script>
+
 </body>
+
 </html>

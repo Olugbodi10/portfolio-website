@@ -1,97 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Research Projects</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore Emmanuel Olugbodi's writings, publications, and award-winning essays focused on policy, development, and reflective analysis.">
+    <meta name="theme-color" content="#0b1f33">
+    <title>Research | Emmanuel Olugbodi</title>
+
+    <!-- FAVICONS -->
     <link rel="icon" href="images/favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
     <link rel="apple-touch-icon" href="assets/favicon/apple-touch-icon.png">
-    <link rel="stylesheet" href="css/style.css">
-    <script defer src="js/script.js"></script>
+
+    <!-- STYLESHEETS -->
+    <link rel="stylesheet" href="css/research-style.css">
 </head>
+
 <body>
+    <!-- NAVIGATION -->
+    <header class="site-header">
+        <nav class="navbar" aria-label="Primary navigation">
+            <div class="nav-container">
+                <a class="brand" href="index.html" aria-label="Emmanuel Olugbodi home">
+                    <img src="images/MyLogom.jpg" alt="Emmanuel Olugbodi logo">
+                </a>
 
-<nav class="navbar">
-  <div class="nav-container">
-    <div class="brand">
-      <img src="images/MyLogom.jpg" alt="Emmanuel Olugbodi logo" />
-    </div>
+                <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-menu" aria-label="Open navigation menu">
+                    <span></span><span></span><span></span>
+                </button>
 
-    <button class="menu-toggle" aria-label="Open navigation">
-      ☰
-    </button>
+                <ul class="nav-links" id="primary-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="cv.html">CV</a></li>
+                    <li><a class="active" href="research.html" aria-current="page">Research</a></li>
+                    <li><a href="analytics.html">Data Analytics</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="cv.html">CV</a></li>
-      <li><a href="research.html">Research</a></li>
-      <li><a href="analytics.html">Data Analytics</a></li>
-    </ul>
-  </div>
-</nav>
+    <main>
+        <!-- HERO -->
+        <section class="research-hero" aria-labelledby="research-title">
+            <div class="research-hero-inner section-shell">
+                <p class="eyebrow">Writings & Publications</p>
+                <h1 id="research-title">Essays, award-winning works, and long-form analysis.</h1>
+                <p class="hero-description">
+                    A collection of research focused on policy, development, and reflective analysis, exploring the intersections of governance, economy, and social growth.
+                </p>
+            </div>
+        </section>
 
-<div class="page-wrapper">
-<main class="page-content">
-    <section class="page-header">
-    <h1 style="text-align: center;">Writings & Publications</h1>
-    <p style="text-align: center;">
-        A collection of essays, award-winning works, and long-form writing focused on policy,
-        development, and reflective analysis.
-    </p>
-</section>
+        <!-- FILTERS -->
+        <section class="filter-section section-shell" aria-label="Filter writings">
+            <div class="filter-bar" role="group" id="filters">
+                <button class="filter-button active" type="button" data-filter="all" aria-pressed="true">All work</button>
+                <button class="filter-button" type="button" data-filter="award" aria-pressed="false">Award-Winning</button>
+                <button class="filter-button" type="button" data-filter="essay" aria-pressed="false">Essays</button>
+                <button class="filter-button" type="button" data-filter="chapter" aria-pressed="false">Book Chapters</button>
+                <button class="filter-button" type="button" data-filter="article" aria-pressed="false">Articles</button>
+            </div>
+        </section>
 
-<section class="filters">
-    <button data-filter="all" class="active">All</button>
-    <button data-filter="award">Award-Winning</button>
-    <button data-filter="essay">Essays</button>
-    <button data-filter="chapter">Book Chapters</button>
-    <button data-filter="article">Articles</button>
-</section>
+        <!-- WRITINGS CONTAINER -->
+        <section class="writings-section section-shell">
+            <div id="writings-container" class="writings-grid" aria-live="polite">
+                <!-- Cards rendered by JavaScript -->
+            </div>
+        </section>
 
-<section id="writings-container" class="writings-grid">
-    <!-- Cards rendered by JavaScript -->
-</section>
-</main>
-</div>
+        <!-- RESEARCH CTA -->
+        <section class="research-cta" aria-labelledby="research-cta-title">
+            <div class="cta-inner section-shell">
+                <div class="cta-copy">
+                    <p class="section-label">Collaboration</p>
+                    <h2 id="research-cta-title">Interested in research collaboration or analysis?</h2>
+                    <p>I am open to research assistance, policy writing, and analytical contributions for development-focused projects.</p>
+                </div>
+                <div class="cta-actions">
+                    <a class="button button-light" href="mailto:olugbodiemmanuel1@gmail.com">Start a conversation <span aria-hidden="true">↗</span></a>
+                </div>
+            </div>
+        </section>
+    </main>
 
-<button id="back-to-top" title="Go to top">↑</button>
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="footer-inner section-shell">
+            <div class="footer-brand">
+                <a class="footer-name" href="index.html">Emmanuel Olugbodi</a>
+                <p class="footer-copy">Finance · Data Analytics · Research</p>
+            </div>
+            <div class="social-links" aria-label="Social and contact links">
+                <a href="mailto:olugbodiemmanuel1@gmail.com" aria-label="Email Emmanuel">
+                    <span class="social-icon" aria-hidden="true">✉</span>
+                    <span>Email</span>
+                </a>
+                <a href="https://www.linkedin.com/in/emmanuelsafr" target="_blank" rel="noopener noreferrer" aria-label="Emmanuel on LinkedIn">
+                    <span class="social-icon linkedin-icon" aria-hidden="true">in</span>
+                    <span>LinkedIn</span>
+                </a>
+                <a href="https://x.com/_emmanuelSAFR" target="_blank" rel="noopener noreferrer" aria-label="Emmanuel on X">
+                    <span class="social-icon x-icon" aria-hidden="true">𝕏</span>
+                    <span>X</span>
+                </a>
+            </div>
+            <p class="copyright">
+                © <span id="year"></span> Emmanuel Olugbodi. All rights reserved.
+            </p>
+        </div>
+    </footer>
 
-<!--Footer-->
-<footer class="site-footer">
-  <div class="footer-inner">
-    <p class="footer-name" class="footer-signature">Emmanuel Olugbodi</p>
+    <!-- BACK TO TOP -->
+    <button class="back-to-top" id="back-to-top" type="button" aria-label="Back to top">↑</button>
 
-   <div class="social-links">
-
-  <a href="mailto:olugbodiemmanuel1@gmail.com" aria-label="Email" class="icon-email">
-  <svg viewBox="0 0 24 24" class="icon">
-    <path d="M12 2a10 10 0 1010 10v-1a1 1 0 00-2 0v1a8 8 0 11-8-8 7.8 7.8 0 016.2 3.1 1 1 0 001.6-1.2A9.8 9.8 0 0012 2z"/>
-    <path d="M12 7a5 5 0 100 10 4.8 4.8 0 003.6-1.6l.2.6a1 1 0 002 0V12a5 5 0 00-5-5zm0 8a3 3 0 110-6 3 3 0 010 6z"/>
-  </svg>
-</a>
-
-  <a href="https://www.linkedin.com/in/emmanuelsafr" target="_blank" aria-label="LinkedIn" class="icon-linkedin">
-    <svg viewBox="0 0 24 24" class="icon">
-      <path d="M4 3a2 2 0 100 4 2 2 0 000-4z"/>
-      <path d="M3 8h2v13H3z"/>
-      <path d="M8 8h2v2c.6-1 1.6-2 3.4-2 3 0 4.6 2 4.6 5.2V21h-2v-7c0-1.8-.7-3-2.4-3-1.3 0-2.2.9-2.5 1.8-.1.3-.1.7-.1 1.1V21H8z"/>
-    </svg>
-  </a>
-
-  <a href="https://x.com/_emmanuelSAFR" target="_blank" aria-label="X" class="icon-x">
-    <svg viewBox="0 0 24 24" class="icon">
-      <path d="M3 3l7.5 8.5L3 21h3.5l5.5-6.3L17 21h4l-7.8-9 7.3-9H17l-4.8 5.7L7.8 3z"/>
-    </svg>
-  </a>
-</div>
-  <div>
-    <p class="footer-copy" style="text-align: center;"> © 2026 All rights reserved</p>
-  </div>
-  </div>
-</footer>
-
-<!--<script src="js/writings.js"></script>-->
+    <!-- SCRIPTS -->
+    <script src="js/research-script.js"></script>
 </body>
+
 </html>

@@ -1,102 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Data Analytics Projects</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore Emmanuel Olugbodi's data analytics projects in business analytics, financial research, and evidence-based decision-making.">
+    <meta name="theme-color" content="#0b1f33">
+    <title>Data Analytics | Emmanuel Olugbodi</title>
+
+    <!-- FAVICONS -->
     <link rel="icon" href="images/favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
     <link rel="apple-touch-icon" href="assets/favicon/apple-touch-icon.png">
-    <link rel="stylesheet" href="css/style.css">
-   <script defer src="js/ascript.js"></script>
+
+    <!-- STYLESHEETS -->
+    <link rel="stylesheet" href="css/analytics-style.css">
 </head>
+
 <body>
+    <!-- NAVIGATION -->
+    <header class="site-header">
+        <nav class="navbar" aria-label="Primary navigation">
+            <div class="nav-container">
+                <a class="brand" href="index.html" aria-label="Emmanuel Olugbodi home">
+                    <img src="images/MyLogom.jpg" alt="Emmanuel Olugbodi logo">
+                </a>
 
-<nav class="navbar">
-  <div class="nav-container">
-    <div class="brand">
-      <img src="images/MyLogom.jpg" alt="Emmanuel Olugbodi logo" />
-    </div>
+                <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-menu" aria-label="Open navigation menu">
+                    <span></span><span></span><span></span>
+                </button>
 
-    <button class="menu-toggle" aria-label="Open navigation">
-      ☰
-    </button>
+                <ul class="nav-links" id="primary-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="cv.html">CV</a></li>
+                    <li><a href="research.html">Research</a></li>
+                    <li><a class="active" href="analytics.html" aria-current="page">Data Analytics</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="cv.html">CV</a></li>
-      <li><a href="research.html">Research</a></li>
-      <li><a href="analytics.html">Data Analytics</a></li>
-    </ul>
-  </div>
-</nav>
+    <main>
+        <!-- HERO -->
+        <section class="analytics-hero" aria-labelledby="analytics-title">
+            <div class="analytics-hero-inner section-shell">
+                <div class="hero-content">
+                    <p class="eyebrow">Data analytics portfolio</p>
+                    <h1 id="analytics-title">Turning structured data into decisions people can use.</h1>
+                    <p class="hero-description">
+                        I use Excel, SQL, Tableau, Power BI, and econometric methods to investigate business, financial, and public-interest questions and communicate the evidence clearly.
+                    </p>
+                    <div class="hero-actions">
+                        <a class="button button-primary" href="#projects">View selected projects <span aria-hidden="true">↓</span></a>
+                        <a class="button button-secondary" href="mailto:olugbodiemmanuel1@gmail.com">Discuss a project <span aria-hidden="true">↗</span></a>
+                    </div>
+                </div>
 
-<main class="page-content">
-<header class="analytics-header">
-  <div class="analytics-header-inner">
-    <h1>Data Analytics Portfolio</h1>
+                <div class="analytics-principles" aria-label="Analytics principles">
+                    <div class="principle-card">
+                        <span class="card-number">01</span>
+                        <strong>Frame</strong>
+                        <p>Define the question.</p>
+                    </div>
+                    <div class="principle-card">
+                        <span class="card-number">02</span>
+                        <strong>Analyse</strong>
+                        <p>Work responsibly with data.</p>
+                    </div>
+                    <div class="principle-card">
+                        <span class="card-number">03</span>
+                        <strong>Explain</strong>
+                        <p>Connect evidence to action.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <p class="subtitle">
-      Business problems analysed using data, clear methodology, and actionable insights
-    </p>
+        <!-- CAPABILITY STRIP -->
+        <section class="capability-strip" aria-label="Analytics capabilities">
+            <div class="capability-inner section-shell">
+                <span>Excel</span>
+                <span>SQL</span>
+                <span>Tableau</span>
+                <span>Power BI</span>
+                <span>EViews 12</span>
+                <span>Research reporting</span>
+            </div>
+        </section>
 
-    <p class="helper-text">
-      Select a project to view the analysis details, watch the presentation, or download deliverables
-    </p>
-  </div>
-</header>
+        <!-- PROJECTS -->
+        <section class="projects-section" id="projects" aria-labelledby="projects-title">
+            <div class="section-heading section-shell">
+                <div class="heading-copy">
+                    <p class="section-label">Selected work</p>
+                    <h2 id="projects-title">Projects built around meaningful questions.</h2>
+                </div>
+                <p class="section-intro">Each case study explains the context, data, method, findings, limitations, and recommended action.</p>
+            </div>
 
-<div class="section-divider">
-  <span>Selected Projects</span>
-</div>
+            <div class="filter-bar section-shell" role="group" aria-label="Filter analytics projects">
+                <button class="filter-button active" type="button" data-filter="all" aria-pressed="true">All projects</button>
+                <button class="filter-button" type="button" data-filter="business" aria-pressed="false">Business analytics</button>
+                <button class="filter-button" type="button" data-filter="finance" aria-pressed="false">Financial analytics</button>
+                <button class="filter-button" type="button" data-filter="research" aria-pressed="false">Research analytics</button>
+            </div>
 
-<main id="projectsContainer">
-  <!-- Projects will be inserted here -->
-</main>
+            <div class="project-grid section-shell" id="projects-container" aria-live="polite">
+                <!-- Projects injected by JavaScript -->
+            </div>
 
-<section class="future-projects-note">
-  <div class="note-badge">
-    <span class="note-icon">⏳</span>
-    <p>Additional data analytics projects will be added soon. Stay tuned!</p>
-  </div>
-</section>
-</main>
+            <div class="portfolio-note section-shell">
+                <span class="note-mark" aria-hidden="true">+</span>
+                <div class="note-content">
+                    <h3>A growing body of work</h3>
+                    <p>This portfolio is being developed across business analytics, financial research, and public-interest data. New case studies will be added as they are completed.</p>
+                </div>
+            </div>
+        </section>
 
-<button id="back-to-top" title="Go to top">↑</button>
+        <!-- WORKFLOW -->
+        <section class="workflow-section" aria-labelledby="workflow-title">
+            <div class="section-heading section-shell">
+                <div class="heading-copy">
+                    <p class="section-label">My workflow</p>
+                    <h2 id="workflow-title">From question to recommendation.</h2>
+                </div>
+            </div>
+            <div class="workflow-grid section-shell">
+                <article class="workflow-card">
+                    <span class="card-number">01</span>
+                    <h3>Frame the problem</h3>
+                    <p>Translate a business, financial, or research question into measurable analytical objectives.</p>
+                </article>
+                <article class="workflow-card">
+                    <span class="card-number">02</span>
+                    <h3>Prepare the data</h3>
+                    <p>Assess data quality, document limitations, clean inputs, and establish a reproducible structure.</p>
+                </article>
+                <article class="workflow-card">
+                    <span class="card-number">03</span>
+                    <h3>Analyse and visualise</h3>
+                    <p>Apply appropriate analytical methods and present patterns through clear tables, charts, and dashboards.</p>
+                </article>
+                <article class="workflow-card">
+                    <span class="card-number">04</span>
+                    <h3>Communicate action</h3>
+                    <p>Turn findings into recommendations, policy implications, or decisions that stakeholders can understand.</p>
+                </article>
+            </div>
+        </section>
 
-<footer class="site-footer">
-  <div class="footer-inner">
-    <p class="footer-name" class="footer-signature">Emmanuel Olugbodi</p>
+        <!-- CTA -->
+        <section class="analytics-cta" aria-labelledby="analytics-cta-title">
+            <div class="cta-inner section-shell">
+                <div class="cta-copy">
+                    <p class="section-label">Collaboration</p>
+                    <h2 id="analytics-cta-title">Have a question that could benefit from clearer evidence?</h2>
+                    <p>I am open to analytics collaborations, research assistance, financial analysis, dashboards, and development-focused projects.</p>
+                </div>
+                <div class="cta-actions">
+                    <a class="button button-light" href="mailto:olugbodiemmanuel1@gmail.com">Start a conversation <span aria-hidden="true">↗</span></a>
+                </div>
+            </div>
+        </section>
+    </main>
 
-   <div class="social-links">
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="footer-inner section-shell">
+            <div class="footer-brand">
+                <a class="footer-name" href="index.html">Emmanuel Olugbodi</a>
+                <p class="footer-copy">Finance · Data Analytics · Research</p>
+            </div>
+            <div class="social-links" aria-label="Social and contact links">
+                <a href="mailto:olugbodiemmanuel1@gmail.com" aria-label="Email Emmanuel">
+                    <span class="social-icon" aria-hidden="true">✉</span>
+                    <span>Email</span>
+                </a>
+                <a href="https://www.linkedin.com/in/emmanuelsafr" target="_blank" rel="noopener noreferrer" aria-label="Emmanuel on LinkedIn">
+                    <span class="social-icon linkedin-icon" aria-hidden="true">in</span>
+                    <span>LinkedIn</span>
+                </a>
+                <a href="https://x.com/_emmanuelSAFR" target="_blank" rel="noopener noreferrer" aria-label="Emmanuel on X">
+                    <span class="social-icon x-icon" aria-hidden="true">𝕏</span>
+                    <span>X</span>
+                </a>
+            </div>
+            <p class="copyright">
+                © <span id="year"></span> Emmanuel Olugbodi. All rights reserved.
+            </p>
+        </div>
+    </footer>
 
-  <a href="mailto:olugbodiemmanuel1@gmail.com" aria-label="Email" class="icon-email">
-  <svg viewBox="0 0 24 24" class="icon">
-    <path d="M12 2a10 10 0 1010 10v-1a1 1 0 00-2 0v1a8 8 0 11-8-8 7.8 7.8 0 016.2 3.1 1 1 0 001.6-1.2A9.8 9.8 0 0012 2z"/>
-    <path d="M12 7a5 5 0 100 10 4.8 4.8 0 003.6-1.6l.2.6a1 1 0 002 0V12a5 5 0 00-5-5zm0 8a3 3 0 110-6 3 3 0 010 6z"/>
-  </svg>
-</a>
+    <!-- BACK TO TOP -->
+    <button class="back-to-top" id="back-to-top" type="button" aria-label="Back to top">↑</button>
 
-  <a href="https://www.linkedin.com/in/emmanuelsafr" target="_blank" aria-label="LinkedIn" class="icon-linkedin">
-    <svg viewBox="0 0 24 24" class="icon">
-      <path d="M4 3a2 2 0 100 4 2 2 0 000-4z"/>
-      <path d="M3 8h2v13H3z"/>
-      <path d="M8 8h2v2c.6-1 1.6-2 3.4-2 3 0 4.6 2 4.6 5.2V21h-2v-7c0-1.8-.7-3-2.4-3-1.3 0-2.2.9-2.5 1.8-.1.3-.1.7-.1 1.1V21H8z"/>
-    </svg>
-  </a>
-
-  <a href="https://x.com/_emmanuelSAFR" target="_blank" aria-label="X" class="icon-x">
-    <svg viewBox="0 0 24 24" class="icon">
-      <path d="M3 3l7.5 8.5L3 21h3.5l5.5-6.3L17 21h4l-7.8-9 7.3-9H17l-4.8 5.7L7.8 3z"/>
-    </svg>
-  </a>
-</div>
-  <div>
-    <p class="footer-copy" style="text-align: center;"> © 2026 All rights reserved</p>
-  </div>
-  </div>
-</footer>
-
+    <!-- SCRIPTS -->
+    <script src="js/analytics-script.js"></script>
 </body>
+
 </html>

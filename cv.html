@@ -1,310 +1,913 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
-    <title>Curriculum Vitae</title>
-    <link rel="icon" href="images/favicon.ico">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
-    <link rel="apple-touch-icon" href="assets/favicon/apple-touch-icon.png">
-    <link rel="stylesheet" href="css/style.css">
-    <script defer src="js/script.js"></script>
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Emmanuel Olugbodi's CV, featuring finance, financial auditing, data analytics, econometric research, leadership, and public-interest work."
+    >
+
+    <meta
+        name="theme-color"
+        content="#0b1f33"
+    >
+
+    <title>
+        CV | Emmanuel Olugbodi
+    </title>
+
+
+    <!-- =========================
+         FAVICONS
+    ========================== -->
+
+    <link
+        rel="icon"
+        href="images/favicon.ico"
+    >
+
+    <link
+        rel="icon"
+        type="image/png"
+        sizes="32x32"
+        href="images/favicon-32x32.png"
+    >
+
+    <link
+        rel="icon"
+        type="image/png"
+        sizes="16x16"
+        href="images/favicon-16x16.png"
+    >
+
+    <link
+        rel="apple-touch-icon"
+        href="assets/favicon/apple-touch-icon.png"
+    >
+
+
+    <!-- =========================
+         STYLESHEET
+    ========================== -->
+
+    <link
+        rel="stylesheet"
+        href="css/cv-style.css"
+    >
+
 </head>
+
+
 <body>
-  
 
-<nav class="navbar">
-  <div class="nav-container">
-    <div class="brand">
-      <img src="images/MyLogom.jpg" alt="Emmanuel Olugbodi logo" />
-    </div>
+    <!-- NAVIGATION -->
+    <header class="site-header">
+        <nav class="navbar" aria-label="Primary navigation">
+            <div class="nav-container">
 
-    <button class="menu-toggle" aria-label="Open navigation">
-      ☰
-    </button>
+                <a
+                    class="brand"
+                    href="index.html"
+                    aria-label="Emmanuel Olugbodi home"
+                >
+                    <img
+                        src="images/MyLogom.jpg"
+                        alt="Emmanuel Olugbodi logo"
+                    >
+                </a>
 
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="cv.html">CV</a></li>
-      <li><a href="research.html">Research</a></li>
-      <li><a href="analytics.html">Data Analytics</a></li>
-    </ul>
-  </div>
-</nav>
+                <button
+                    class="menu-toggle"
+                    type="button"
+                    aria-expanded="false"
+                    aria-controls="primary-menu"
+                    aria-label="Open navigation menu"
+                >
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
 
-  <!--  
-    <main class="page-content">
-    -->
+                <ul
+                    class="nav-links"
+                    id="primary-menu"
+                >
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+
+                    <li>
+                        <a
+                            class="active"
+                            href="cv.html"
+                            aria-current="page"
+                        >
+                            CV
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="research.html">Research</a>
+                    </li>
+
+                    <li>
+                        <a href="analytics.html">Data Analytics</a>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+    </header>
+
+
     <main class="cv-container">
 
-    <!-- Header -->
-  <section class="cv-header">
-        <h1>Emmanuel Olugbodi</h1>
-        <p class="cv-tagline">
-            Finance Undergraduate | Data Analytics | Research Writing
-        </p>
-        <p class="cv-subtitle">University of Lagos, Akoka-Yaba, Lagos, Nigeria.</p>
+        <!-- CV HERO -->
+        <section
+            class="cv-hero"
+            aria-labelledby="cv-title"
+        >
 
-     <!--   <a href="assets/Emmanuel Olugbodi Resume.pdf" class="btn download" download>
-            <span> Download Résumé </span> 
-      </a> -->
-<section class="cv-downloads">
+            <div class="cv-hero-copy">
 
-    <div class="download-card">
-        <p>Finance & Writing Background</p>
-        <a href="assets/Emmanuel_Olugbodi_Finance_Resumee.pdf"
-           class="btn download"
-           download>
-            Download Finance Résumé
-        </a>
-    </div>
-
-    <div class="download-card">
-        <p>Data Analytics Background</p>
-        <a href="assets/Emmanuel_Olugbodi_Data_Analytics_Resumee.pdf"
-           class="btn download"
-           download>
-            Download Data Analytics Résumé
-        </a>
-    </div>
-</section>
-            
- </section>
-    <!-- Professional Summary -->
-    <section class="cv-section">
-        <h2>Professional Summary</h2>
-        <p>
-            To build a career at the intersection of finance, public policy, and data analytics by applying research, analytical, and problem-solving skills to support evidence-based decision-making, transparent public financial management, and sustainable development initiatives while continuously developing practical and professional expertise.
-        </p>
-    </section>
-
-    <!-- Education -->
-<!--    <section class="cv-section">
-        <h2>Education</h2>
-
-        <div class="cv-item timeline-left">
-            <span class="cv-year">2021 – 2026</span>
-            <div>
-                <h3>University of Lagos</h3>
-                <p class="cv-meta">Bachelor of Science (B.Sc.) in Finance</p>
-                <p>Academic Standing: First Class</p>
-                <p>
-                    Relevant Coursework: Principles of Accounting, Business Finance, Financial Institutions and Markets,
-                    Banking Laws and Regulations, Monetary Economics, Macroeconomics, International Finance,
-                    Agricultural Finance, Strategic Management.
+                <p class="eyebrow">
+                    Professional profile
                 </p>
+
+                <h1 id="cv-title">
+                    Emmanuel Olugbodi
+                </h1>
+
+                <p class="cv-tagline">
+                    First Class Finance Graduate · Financial Audit · Data Analytics · Research
+                </p>
+
+                <p class="cv-subtitle">
+                    Lagos, Nigeria · Open to research, scholarship, partnership, publicity, and development-focused opportunities.
+                </p>
+
+                <div class="hero-actions">
+
+                    <!-- REQUEST COMPREHENSIVE CV -->
+                    <a
+                        class="button button-primary"
+                        href="mailto:olugbodiemmanuel1@gmail.com?subject=Request%20for%20Comprehensive%20CV&amp;body=Dear%20Emmanuel%2C%0A%0AI%20would%20like%20to%20request%20your%20comprehensive%20CV%20for%20consideration%20for%20the%20following%20opportunity.%0A%0ARole%20%2F%20Opportunity%3A%20%5BPlease%20specify%20the%20role%20or%20opportunity%5D%0AOrganisation%3A%20%5BPlease%20specify%20the%20organisation%2C%20if%20applicable%5D%0A%0AThank%20you.%0A%0AKind%20regards%2C%0A%5BYour%20Name%5D"
+                    >
+                        Request comprehensive CV
+                        <span aria-hidden="true">↗</span>
+                    </a>
+
+                    <a
+                        class="button button-secondary"
+                        href="mailto:olugbodiemmanuel1@gmail.com"
+                    >
+                        Invite a conversation
+                        <span aria-hidden="true">↗</span>
+                    </a>
+
+                </div>
+
             </div>
-        </div>
-    </section>
--->
 
-<section class="cv-section">
-    <h2>Education</h2>
 
-    <div class="cv-item">
-        <div class="cv-row">
-            <h3>University of Lagos</h3>
-        </div>
+            <div
+                class="profile-facts"
+                aria-label="Profile highlights"
+            >
 
-        <div class="cv-row">
-            <p class="cv-meta">Programme: Bachelor of Science, Finance</p>
-            <span class="cv-year">2021 – 2026</span>
-        </div>
+                <div class="fact">
+                    <strong>First Class</strong>
+                    <span>B.Sc. Finance</span>
+                </div>
 
-        <p>Academic Standing: First Class</p>
-        <p>
-            Relevant Coursework: Principles of Accounting, Principles of Finance, Business Finance,
-            Financial Institutions and Markets, Banking Laws and Regulations, Monetary Economics,
-            Macroeconomics, International Finance, Agricultural Finance, Strategic Management, Cryptocurrency.
-        </p>
-    </div>
-</section>
+                <div class="fact">
+                    <strong>2+ years</strong>
+                    <span>Audit and operations</span>
+                </div>
 
-    <!-- Skills -->
-    <section class="cv-section">
-        <h2>Skills</h2>
+            </div>
 
-        <div class="skills-grid">
+        </section>
+
+
+        <!-- PROFILE SECTION -->
+        <section
+            class="cv-section"
+            aria-labelledby="profile-title"
+        >
+
+            <div class="section-heading">
+
+                <p class="section-label">
+                    Profile
+                </p>
+
+                <h2 id="profile-title">
+                    Finance, evidence, and public-interest analysis.
+                </h2>
+
+            </div>
+
+            <p class="lead-paragraph">
+                First Class Finance graduate of the University of Lagos with practical experience in financial auditing, data analysis, compliance reporting, and structured research across multi-site environments.
+            </p>
+
+            <p>
+                I combine financial discipline, analytical thinking, and clear communication to support evidence-based decisions in finance, public policy, energy, and development. My work is guided by an interest in how financial systems, institutional decisions, and public resources shape economic and social outcomes.
+            </p>
+
+        </section>
+
+
+        <!-- STRENGTHS -->
+        <section
+            class="cv-section"
+            aria-labelledby="strengths-title"
+        >
+
+            <div class="section-heading">
+
+                <p class="section-label">
+                    Core profile
+                </p>
+
+                <h2 id="strengths-title">
+                    What I bring
+                </h2>
+
+            </div>
+
+
+            <div class="strengths-grid">
+
+                <article class="strength-card">
+                    <span class="card-number">01</span>
+                    <h3>Financial discipline</h3>
+                    <p>
+                        Transaction auditing, reconciliation, compliance documentation, internal controls, and operational reporting.
+                    </p>
+                </article>
+
+                <article class="strength-card">
+                    <span class="card-number">02</span>
+                    <h3>Research capability</h3>
+                    <p>
+                        Independent research, econometric analysis, intelligence briefs, policy writing, and evidence-based recommendations.
+                    </p>
+                </article>
+
+                <article class="strength-card">
+                    <span class="card-number">03</span>
+                    <h3>Analytical communication</h3>
+                    <p>
+                        Data visualization, presentations, report writing, data storytelling, and clear public-facing explanation.
+                    </p>
+                </article>
+
+                <article class="strength-card">
+                    <span class="card-number">04</span>
+                    <h3>Development orientation</h3>
+                    <p>
+                        Strong interest in public finance, governance, energy, education, institutional performance, and sustainable development.
+                    </p>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- RESEARCH -->
+        <section
+            class="cv-section"
+            aria-labelledby="research-title"
+        >
+
+            <div class="section-heading section-heading-inline">
+
+                <div>
+
+                    <p class="section-label">
+                        Research and analytical work
+                    </p>
+
+                    <h2 id="research-title">
+                        Evidence, analysis, and research
+                    </h2>
+
+                </div>
+
+                <a
+                    class="text-link"
+                    href="research.html"
+                >
+                    Explore research ↗
+                </a>
+
+            </div>
+
+
+            <div class="research-list">
+
+                <article class="research-feature">
+
+                    <div class="item-topline">
+                        <span class="item-type">
+                            Professional research
+                        </span>
+
+                        <span class="item-date">
+                            June 2026 – Present
+                        </span>
+                    </div>
+
+                    <h3>
+                        Research Assistant — The Energy Gist
+                    </h3>
+
+                    <p class="cv-meta">
+                        African Energy Intelligence Publication
+                    </p>
+
+                    <p>
+                        Research and verify financial and sector data across six African energy-market themes each week, producing intelligence briefs, insight notes, and data-visualisation packs for professional publication.
+                    </p>
+
+                </article>
+
+
+                <article class="research-feature">
+
+                    <div class="item-topline">
+                        <span class="item-type">
+                            Econometric research
+                        </span>
+
+                        <span class="item-date">
+                            2025 – 2026
+                        </span>
+                    </div>
+
+                    <h3>
+                        Bank Recapitalisation and Sectoral Credit Allocation in Nigeria
+                    </h3>
+
+                    <p class="cv-meta">
+                        Undergraduate thesis · EViews 12 Analysis
+                    </p>
+
+                    <p>
+                        Built four ARDL econometric models to examine long-run policy relationships between bank capital and sectoral credit. Conducted unit-root tests and error-correction analysis.
+                    </p>
+
+                </article>
+
+
+                <article class="research-feature">
+
+                    <div class="item-topline">
+                        <span class="item-type">
+                            Data analytics
+                        </span>
+
+                        <span class="item-date">
+                            2025
+                        </span>
+                    </div>
+
+                    <h3>
+                        Cyclistic Bike-Share Analysis
+                    </h3>
+
+                    <p class="cv-meta">
+                        Google Data Analytics Capstone
+                    </p>
+
+                    <p>
+                        Analysed 12 months of operational data in Excel and Tableau to identify user behavior patterns and produce data-backed business recommendations.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- EDUCATION -->
+        <section
+            class="cv-section"
+            aria-labelledby="education-title"
+        >
+
+            <div class="section-heading">
+
+                <p class="section-label">
+                    Academic foundation
+                </p>
+
+                <h2 id="education-title">
+                    Education
+                </h2>
+
+            </div>
+
+
+            <article class="timeline-item">
+
+                <div class="item-heading-row">
+
+                    <div>
+
+                        <h3>
+                            University of Lagos
+                        </h3>
+
+                        <p class="cv-meta">
+                            B.Sc. Finance · First Class Honours
+                        </p>
+
+                    </div>
+
+                    <span class="item-date">
+                        2021 – 2026
+                    </span>
+
+                </div>
+
+
+                <div class="timeline-content">
+
+                    <p>
+                        Relevant coursework: Principles of Accounting, Banking Laws, Financial Markets, Business Finance, Monetary Economics, Macroeconomics, and Econometrics.
+                    </p>
+
+                </div>
+
+            </article>
+
+        </section>
+
+
+        <!-- EXPERIENCE -->
+        <section
+            class="cv-section"
+            aria-labelledby="experience-title"
+        >
+
+            <div class="section-heading">
+
+                <p class="section-label">
+                    Professional experience
+                </p>
+
+                <h2 id="experience-title">
+                    Audit, controls, and administration
+                </h2>
+
+            </div>
+
+
+            <article class="timeline-item">
+
+                <div class="item-heading-row">
+
+                    <div>
+
+                        <h3>
+                            Agent Banking Operations Auditor
+                        </h3>
+
+                        <p class="cv-meta">
+                            Probity Signatures
+                        </p>
+
+                    </div>
+
+                    <span class="item-date">
+                        Jan 2023 – Oct 2025
+                    </span>
+
+                </div>
+
+
+                <div class="timeline-content">
+
+                    <ul>
+
+                        <li>
+                            Audited daily financial transactions across multiple locations, reconciling records and maintaining compliance documentation.
+                        </li>
+
+                        <li>
+                            Monitored operational performance and tracked irregularities through to resolution.
+                        </li>
+
+                        <li>
+                            Prepared structured compliance reports for management, translating raw data into findings.
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </article>
+
+
+            <article class="timeline-item">
+
+                <div class="item-heading-row">
+
+                    <div>
+
+                        <h3>
+                            Work-Study — Financial Operations
+                        </h3>
+
+                        <p class="cv-meta">
+                            University of Lagos, Bursary Office
+                        </p>
+
+                    </div>
+
+                    <span class="item-date">
+                        Oct 2023 – Feb 2024
+                    </span>
+
+                </div>
+
+
+                <div class="timeline-content">
+
+                    <ul>
+
+                        <li>
+                            Supported financial record-keeping, document management, and inter-departmental administrative coordination.
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </article>
+
+        </section>
+
+
+        <!-- DEVELOPMENT -->
+        <section
+            class="cv-section"
+            aria-labelledby="development-title"
+        >
+
+            <div class="section-heading">
+
+                <p class="section-label">
+                    Leadership and development
+                </p>
+
+                <h2 id="development-title">
+                    Building capacity for meaningful work
+                </h2>
+
+            </div>
+
+
+            <div class="development-grid">
+
+                <article class="development-card">
+
+                    <span class="item-type">
+                        Leadership
+                    </span>
+
+                    <h3>
+                        2026 Aspire Leaders Program
+                    </h3>
+
+                    <p class="cv-meta">
+                        Aspire Institute · July 2026
+                    </p>
+
+                    <p>
+                        Completed an international leadership programme covering critical thinking and global communication.
+                    </p>
+
+                </article>
+
+
+                <article class="development-card">
+
+                    <span class="item-type">
+                        Professional
+                    </span>
+
+                    <h3>
+                        Chartered Institute of Bankers (CIBN)
+                    </h3>
+
+                    <p class="cv-meta">
+                        Student Member · Chartered Stage
+                    </p>
+
+                    <p>
+                        Progressing through banking regulations, governance, and professional ethics examinations.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- SKILLS -->
+        <section
+            class="cv-section"
+            aria-labelledby="skills-title"
+        >
+
+            <div class="section-heading">
+
+                <p class="section-label">
+                    Capabilities
+                </p>
+
+                <h2 id="skills-title">
+                    Skills and tools
+                </h2>
+
+            </div>
+
+
+            <div class="skills-grid">
+
+                <div class="skill-group">
+                    <h3>Finance and audit</h3>
+                    <p>
+                        Reconciliation, auditing, compliance reporting, internal controls, KYC documentation.
+                    </p>
+                </div>
+
+                <div class="skill-group">
+                    <h3>Data and analytics</h3>
+                    <p>
+                        Excel, SQL, Tableau, Power BI, EViews 12, data modelling.
+                    </p>
+                </div>
+
+                <div class="skill-group">
+                    <h3>Research</h3>
+                    <p>
+                        Research writing, intelligence briefing, report writing, data storytelling.
+                    </p>
+                </div>
+
+                <div class="skill-group">
+                    <h3>Professional</h3>
+                    <p>
+                        Analytical thinking, deadline discipline, attention to detail, adaptability.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CREDENTIALS & RECOGNITION -->
+        <section class="cv-section split-section">
+
             <div>
-                <h4>Analytical & Research</h4>
-                <p>Data analysis, policy analysis, research writing, critical thinking</p>
-            </div>
 
-            <div>
-                <h4>Technical Tools</h4>
-                <p>Excel, SQL, Power BI, PowerPoint, Word, Canva, HTML, CSS, JavaScript</p>
-            </div>
+                <div class="section-heading">
 
-            <div>
-                <h4>Communication</h4>
-                <p>Analytical writing, documentation, presentations, structured reporting</p>
-            </div>
-        </div>
-    </section>
-    
-    <!-- Projects -->
-    <section class="cv-section">
-        <h2>Projects</h2>
+                    <p class="section-label">
+                        Credentials
+                    </p>
 
-        <div class="cv-item">
-            <h3>Data Analytics Portfolio Development</h3>
-            <ul>
-                <li>Completed a structured data analytics project addressing a defined business problem</li>
-                <li>Applied data cleaning, analysis, and interpretation techniques using Excel, SQL, and Power BI</li>
-                <li>Integrated project documentation and insights into a personal portfolio website</li>
-            </ul>
-        </div>
+                    <h2>
+                        Certifications
+                    </h2>
 
-        <div class="cv-item">
-            <h3>Responsive Personal Portfolio Website</h3>
-            <ul>
-                <li>Designed and developed a responsive personal website using HTML, CSS, and JavaScript</li>
-                <li>Showcased data analytics projects, research writing, and professional background</li>
-                <li>Implemented mobile-friendly layouts and clean UI structure</li>
-            </ul>
-        </div>
-    </section>
+                </div>
 
- <!-- Development -->
-    <section class="cv-section">
-        <h2>Academic, Research & Professional Development</h2>
+                <ul class="clean-list">
 
-        <div class="cv-item">
-            <h3>Academic & Professional Development</h3>
-            <span class="cv-year">2021 – Present</span>
-            <ul>
-                <li>Pursuing undergraduate degree in Finance with interest in public finance and development-related issues</li>
-                <li>Engaged in continuous skill development across data analytics, frontend web development, and research writing</li>
-                <li>Designed, built, and continuously updated a personal portfolio website to document projects and research work</li>
-                <li>Completed a data analytics project focused on solving a defined business problem using structured analysis and clear recommendations</li>
-            </ul>
-        </div>
-    </section>
+                    <li>
+                        Google Data Analytics Professional Certificate
+                    </li>
 
-    <!-- Research -->
-    <section class="cv-section">
-        <h2>Research Writing & Political Analysis</h2>
+                    <li>
+                        Deloitte Australia Data Analytics Simulation
+                    </li>
 
-        <div class="cv-item">
-            <h3>Research Writer & Emerging Political Analyst</h3>
-            <span class="cv-year">2022 – Present</span>
-            <ul>
-                <li>Conducted independent research and analytical writing on public policy, governance, and development themes</li>
-                <li>Authored multiple essays recognised at national essay competitions</li>
-                <li>Applied structured argumentation, evidence-based reasoning, and policy analysis techniques</li>
-                <li>Contributed long-form writing including essays and book chapters</li>
-            </ul>
-        </div>
-    </section>
-    
-    <!-- Experience -->
-    <section class="cv-section">
-        <h2>Experience</h2>
+                    <li>
+                        Google AI Essentials Specialization
+                    </li>
 
-       <div class="cv-item">
-        <div class="cv-row">
-            <h3>Work Study, University of Lagos, Bursary Office</h3>
-            <span class="cv-year">27 Oct 2023 – 16 Feb 2024</span>
-        </div>
-                <ul>
-                    <li>Managed distribution of mails and official documents</li>
-                    <li>Improved departmental coordination and record accuracy</li>
                 </ul>
-            </div>
-        </div>
 
-     <div class="cv-item">
-        <div class="cv-row">
-              <h3>POS Operations Auditor, Probity Signatures</h3>
-                <span class="cv-year">Jan 2023 – Oct 2025 (School Breaks Only)</span>
-        </div>
-                <ul>
-                    <li>Audited daily POS transactions across 3–4 branches</li>
-                    <li>Conducted cash counts, reconciled system logs, and reported discrepancies</li>
-                    <li>Maintained audit trails and supported operational accountability</li>
+            </div>
+
+
+            <div>
+
+                <div class="section-heading">
+
+                    <p class="section-label">
+                        Recognition
+                    </p>
+
+                    <h2>
+                        Selected distinctions
+                    </h2>
+
+                </div>
+
+                <ul class="clean-list recognition-list">
+
+                    <li>
+                        <strong>Top Three Awardee</strong> — Tosin Adesile Essay Competition 3.0
+                    </li>
+
+                    <li>
+                        <strong>Top Ten Finalist</strong> — NCDMB National Essay Competition, 2023
+                    </li>
+
+                    <li>
+                        <strong>Top Ten Finalist</strong> — World Maritime Day Essay Competition, 2023
+                    </li>
+
                 </ul>
+
             </div>
+
+        </section>
+
+
+        <!-- OPPORTUNITY PANEL -->
+        <section
+            class="opportunity-panel"
+            aria-labelledby="opportunity-title"
+        >
+
+            <div>
+
+                <p class="section-label">
+                    Collaboration
+                </p>
+
+                <h2 id="opportunity-title">
+                    Open to work that connects finance, data, and research.
+                </h2>
+
+                <p>
+                    I welcome opportunities involving scholarships, research assistance, policy analysis, and development-focused initiatives.
+                </p>
+
+            </div>
+
+
+            <div class="opportunity-actions">
+
+                <a
+                    class="button button-primary"
+                    href="mailto:olugbodiemmanuel1@gmail.com?subject=Request%20for%20Comprehensive%20CV&amp;body=Dear%20Emmanuel%2C%0A%0AI%20would%20like%20to%20request%20your%20comprehensive%20CV%20for%20consideration%20for%20the%20following%20opportunity.%0A%0ARole%20%2F%20Opportunity%3A%20%5BPlease%20specify%20the%20role%20or%20opportunity%5D%0AOrganisation%3A%20%5BPlease%20specify%20the%20organisation%2C%20if%20applicable%5D%0A%0AThank%20you.%0A%0AKind%20regards%2C%0A%5BYour%20Name%5D"
+                >
+                    Request comprehensive CV
+                    <span aria-hidden="true">↗</span>
+                </a>
+
+                <a
+                    class="button button-light"
+                    href="mailto:olugbodiemmanuel1@gmail.com"
+                >
+                    Start a conversation ↗
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER (Exact Homepage Match) -->
+    <footer class="site-footer">
+
+        <div class="footer-inner section-shell">
+
+            <div class="footer-brand">
+
+                <a
+                    class="footer-name"
+                    href="index.html"
+                >
+                    Emmanuel Olugbodi
+                </a>
+
+                <p class="footer-copy">
+                    Finance · Data Analytics · Research
+                </p>
+
+            </div>
+
+
+            <div
+                class="social-links"
+                aria-label="Social and contact links"
+            >
+
+                <a
+                    href="mailto:olugbodiemmanuel1@gmail.com"
+                    aria-label="Email Emmanuel"
+                >
+                    <span
+                        class="social-icon"
+                        aria-hidden="true"
+                    >
+                        ✉
+                    </span>
+
+                    <span>
+                        Email
+                    </span>
+                </a>
+
+
+                <a
+                    href="https://www.linkedin.com/in/emmanuelsafr"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Emmanuel on LinkedIn"
+                >
+                    <span
+                        class="social-icon linkedin-icon"
+                        aria-hidden="true"
+                    >
+                        in
+                    </span>
+
+                    <span>
+                        LinkedIn
+                    </span>
+                </a>
+
+
+                <a
+                    href="https://x.com/_emmanuelSAFR"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Emmanuel on X"
+                >
+                    <span
+                        class="social-icon x-icon"
+                        aria-hidden="true"
+                    >
+                        𝕏
+                    </span>
+
+                    <span>
+                        X
+                    </span>
+                </a>
+
+            </div>
+
+
+            <p class="copyright">
+                © <span id="year"></span> Emmanuel Olugbodi. All rights reserved.
+            </p>
+
         </div>
-    </section>
 
-    <!-- Certifications -->
-    <section class="cv-section">
-        <h2>Certifications</h2>
-
-        <ul class="simple-list">
-             <li>ICLED Business School (University of Lagos Collaboration) – Career Readiness & Professional Development</li>
-            <li>Google Data Analytics Professional Certificate — Coursera (Issued by Google)</li>
-             <li>Deloitte Australia Data Analytics Job Simulation on Forage</li>
-            <li>Google AI Essentials Specialization - Google via Coursera</li>
-        </ul>
-    </section>
-
-    <!-- Leadership & Volunteering -->
-    <section class="cv-section">
-        <h2>Leadership & Volunteer Experience</h2>
-
-        <ul class="simple-list">
-            <li>Education Outreach Volunteer – student mentoring and awareness initiatives</li>
-            <li>Volunteer Writer – community-led outreach and written advocacy projects</li>
-            <li>Peer Academic Support – guidance on research structure and academic planning</li>
-            <li>Academic Group Coordination – task organisation and timeline management</li>
-        </ul>
-    </section>
-
-    <!-- Awards -->
-    <section class="cv-section">
-        <h2>Awards & Recognition</h2>
-
-        <ul class="simple-list">
-            <li>Top Three – Tosin Adesile Essay Writing Competition</li>
-            <li>Top Ten – World Maritime Day Essay Competition (NIMASA)</li>
-            <li>Top Ten – NCDMB National Undergraduate Essay Competition</li>
-        </ul>
-    </section>
-
-    <!-- Languages -->
-    <section class="cv-section">
-        <h2>Languages</h2>
-        <p>English (Fluent), French (Basic)</p>
-    </section>
-
-</main>
+    </footer>
 
 
-<button id="back-to-top" title="Go to top">↑</button>
+    <button
+        class="back-to-top"
+        type="button"
+        aria-label="Back to top"
+    >
+        ↑
+    </button>
 
-  <footer class="site-footer">
-  <div class="footer-inner">
-    <p class="footer-name" class="footer-signature">Emmanuel Olugbodi</p>
 
-   <div class="social-links">
+    <script src="js/cv-script.js" defer></script>
 
-  <a href="mailto:olugbodiemmanuel1@gmail.com" aria-label="Email" class="icon-email">
-  <svg viewBox="0 0 24 24" class="icon">
-    <path d="M12 2a10 10 0 1010 10v-1a1 1 0 00-2 0v1a8 8 0 11-8-8 7.8 7.8 0 016.2 3.1 1 1 0 001.6-1.2A9.8 9.8 0 0012 2z"/>
-    <path d="M12 7a5 5 0 100 10 4.8 4.8 0 003.6-1.6l.2.6a1 1 0 002 0V12a5 5 0 00-5-5zm0 8a3 3 0 110-6 3 3 0 010 6z"/>
-  </svg>
-</a>
-
-  <a href="https://www.linkedin.com/in/emmanuelsafr" target="_blank" aria-label="LinkedIn" class="icon-linkedin">
-    <svg viewBox="0 0 24 24" class="icon">
-      <path d="M4 3a2 2 0 100 4 2 2 0 000-4z"/>
-      <path d="M3 8h2v13H3z"/>
-      <path d="M8 8h2v2c.6-1 1.6-2 3.4-2 3 0 4.6 2 4.6 5.2V21h-2v-7c0-1.8-.7-3-2.4-3-1.3 0-2.2.9-2.5 1.8-.1.3-.1.7-.1 1.1V21H8z"/>
-    </svg>
-  </a>
-
-  <a href="https://x.com/_emmanuelSAFR" target="_blank" aria-label="X" class="icon-x">
-    <svg viewBox="0 0 24 24" class="icon">
-      <path d="M3 3l7.5 8.5L3 21h3.5l5.5-6.3L17 21h4l-7.8-9 7.3-9H17l-4.8 5.7L7.8 3z"/>
-    </svg>
-  </a>
-</div>
-  <div>
-    <p class="footer-copy" style="text-align: center;"> © 2026 All rights reserved</p>
-  </div>
-  </div>
-</footer>  
 </body>
+
 </html>
